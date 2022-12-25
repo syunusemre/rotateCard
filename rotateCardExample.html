@@ -1,0 +1,59 @@
+<html>
+
+<head>
+    <link rel="stylesheet" href="rotateCard.css">
+    <script src="https://kit.fontawesome.com/2c3103d0c4.js" crossorigin="anonymous"></script>
+</head>
+
+<body>
+
+    <!-- container card -->
+    <div class="container">
+        <!-- cover card -->
+        <div class="main-card" id="main-card" onclick="Campingfunc(),Kayakingfunc()">
+            <!-- kayaking card -->
+            <div class="kano-card" id="kano-card" onclick="Kayakingfunc()">
+                <div class="kano-images">
+                    <img class="kano" id="kano" src="kayaking.png" onclick="Kayakingfunc()">
+                </div>
+                <div class="kano-sport-name">
+                    <div class="kano-circle">
+                        <div class="kano-sport-text">Kayaking</div>
+                    </div>
+                </div>
+                <div class="kano-detail"><sup>$</sup>39 / 4<sup>hrs</sup></div>
+                <div class="kano-little-detail">per person</div>
+                <div class="kano-location"><i class="fa-solid fa-map-location-dot"></i><br>İzmir,Turkey</div>
+                <div class="kano-button-div"><button class="kano-kykbutton">Choose Date</button></div>
+            </div>
+            <!-- camping card -->
+            <div class="camp-card" id="camp-card" onclick="Campingfunc()">
+                <div class="camp-images">
+                    <img class="camp" id="camp" src="camping.png" onclick="Campingfunc()">
+                    <img class="fire" id="fire" src="ates.png" onclick="Campingfunc()">
+                </div>
+                <div class="camp-sport-name">
+                    <div class="camp-circle">
+                        <div class="camp-sport-text">Camping</div>
+                    </div>
+                </div>
+                <div class="camp-detail"><sup>$</sup>29 / 8<sup>hrs</sup></div>
+                <div class="camp-little-detail">per person</div>
+                <div class="camp-location"><i class="fa-solid fa-map-location-dot"></i><br>İstanbul,Turkey</div>
+                <div class="camp-button-div"><button class="camp-kykbutton">Choose Date</button></div>
+            </div>
+        </div>
+        <button class="btnclasskayaking" id="btnkayaking" value="kano" onclick="Kayakingfunc()">
+			<p>Camping</p>    
+		</button>
+    </div>
+    <div class="buttoncamping">
+        <button class="btnclasscamping" id="btncamping" value="camp" onclick="Campingfunc()">
+		   <p>Kayaking</p> 
+		</button>
+    </div>
+
+    <script src="rotate.js"></script>
+</body>
+
+</html>

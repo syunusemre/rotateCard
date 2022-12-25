@@ -1,0 +1,255 @@
+body {
+    position: relative;
+    height: 90vh;
+	background-color:#dff9fb;
+}
+
+.container {
+    height: 450px;
+    width: 75%;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.main-card {
+    height: 100%;
+    width: 35%;
+    margin: auto;
+    position: relative;
+}
+
+
+/* .main-card:hover .kano-card {
+    transform: rotateY(180deg);
+    opacity: 0;
+}
+
+.main-card:hover .camp-card {
+    transform: rotateY(360deg);
+    opacity: 1;
+}
+
+.main-card:hover .kano {
+    top: -180px;
+    left: 10px;
+}
+
+.main-card:hover .camp {
+    transform: scale(1, 1);
+}
+
+.main-card:hover .fire {
+    transform: scale(1, 1);
+} */
+
+.kano-card {
+    border-radius: 15px;
+    height: 100%;
+    width: 100%;
+    box-shadow: 4px 7px 12px 1px #bababa;
+    position: absolute;
+    background-color: white;
+    transition: 1s;
+}
+
+.kano-images {
+    border-radius: 15px 15px 0px 0px;
+    height: 24%;
+    background-image: url("wave.png");
+    background-size: 100% 100%;
+    position: relative;
+}
+
+.kano {
+    width: 265px;
+    height: 300px;
+    position: absolute;
+    top: -120px;
+    left: -70px;
+    transition: 3s;
+}
+
+.kano-sport-name {
+    height: 20%;
+    position: relative;
+}
+
+.kano-circle {
+    height: 70px;
+    width: 70px;
+    border-radius: 50%;
+    background-image: radial-gradient(white, turquoise);
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.kano-sport-text {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font-size: 30px;
+}
+
+.kano-detail {
+    padding-top: 20px;
+    text-align: center;
+    font-size: 30px;
+}
+
+.kano-little-detail {
+    text-align: center;
+    color: grey;
+}
+
+.kano-location {
+    text-align: center;
+    padding-top: 20px;
+    font-size: 26px;
+}
+
+.kano-button-div {
+    height: 19%;
+    text-align: center;
+    padding-top: 25px;
+    box-sizing: border-box;
+}
+
+.kano-kykbutton {
+    background-color: darkblue;
+    height: 30px;
+    width: 120px;
+    border: none;
+    color: white;
+}
+
+.camp-card {
+    border-radius: 15px;
+    height: 100%;
+    box-shadow: 4px 7px 12px 1px #bababa;
+    position: absolute;
+    width: 100%;
+    background-color: white;
+    z-index: -1;
+    opacity: 0;
+    transition: 1s;
+    transform: rotateY(180deg);
+}
+
+.camp-images {
+    border-radius: 15px 15px 0px 0px;
+    height: 24%;
+    background-image: url("grass.png");
+    background-size: 100% 100%;
+    position: relative;
+}
+
+.camp {
+    width: 200px;
+    height: 255px;
+    position: absolute;
+    top: -110px;
+    left: -50px;
+    transform: scale(0, 0);
+    transition: 3s;
+}
+
+.fire {
+    width: 150px;
+    height: 150px;
+    position: absolute;
+    top: -30px;
+    right: -20px;
+    transform: scale(0, 0);
+    transition: 3s;
+}
+
+.camp-sport-name {
+    height: 20%;
+    position: relative;
+}
+
+.camp-circle {
+    height: 70px;
+    width: 70px;
+    border-radius: 50%;
+    background-image: radial-gradient(white, green);
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.camp-sport-text {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font-size: 30px;
+}
+
+.camp-detail {
+    padding-top: 20px;
+    text-align: center;
+    font-size: 30px;
+}
+
+.camp-little-detail {
+    text-align: center;
+    color: grey;
+}
+
+.camp-location {
+    text-align: center;
+    padding-top: 20px;
+    font-size: 26px;
+}
+
+.camp-button-div {
+    height: 19%;
+    text-align: center;
+    padding-top: 25px;
+    box-sizing: border-box;
+}
+
+.camp-kykbutton {
+    background-color: green;
+    height: 30px;
+    width: 120px;
+    border: none;
+    color: white;
+}
+
+.btnclasskayaking {
+    border: 1px solid rgb(0, 0, 0);
+    position: absolute;
+    margin-left: -213px;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    border-radius: 10px 0px 0px 10px;
+    background-color: rgb(8, 39, 34);
+    color: rgb(187, 180, 180);
+}
+.btnclasskayaking:hover{
+	cursor:pointer;
+}
+
+.btnclasscamping {
+    border: 1px solid rgb(14, 13, 13);
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    margin-left: 212px;
+    border-radius: 0px 10px 10px 0px;
+    background-color: rgb(8, 39, 34);
+    color: rgb(187, 180, 180);
+}
+.btnclasscamping:hover{
+	cursor:pointer;
+}
